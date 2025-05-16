@@ -129,7 +129,7 @@ nav a:hover {
 }
 .icon-social a {
     text-decoration: none;
-    color: #000;
+    color: #272b30;
 }
 
 /*  */
@@ -139,7 +139,6 @@ nav a:hover {
 main {
     grid-column: 3/11;
     grid-row: 2/8;
-    /* background-color: #5df318; */
     display: flex;
     flex-direction: column;
     padding: 150px 50px 0 50px;
@@ -170,7 +169,6 @@ main .buttons {
     justify-content: space-between;
     align-items: center;
     margin: 50px 100px 0 100px;
-
 }
 /*  */
 /* LAST CREATION */
@@ -257,13 +255,13 @@ footer p {
 /* background image index */
 .index-bg {
     background-image: url(../media/header.jpg);
-    background-size: 100vw 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(2px);
 } 
 .contact-bg {
     background-image: url(../media/header-2.jpg);
-    background-size: 100vw 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
 }
@@ -355,7 +353,7 @@ footer p {
     text-align: left;
 }
 .intro {
-        margin: 0 25px 100px 25px;
+    margin: 0 25px 100px 25px;
 }
 .marc {
     display: flex;
@@ -575,3 +573,238 @@ form .button-secondary {
     border: none;
 }
 
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ---------------------MOBILE--------------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+@media (min-width : 320px) and (max-width : 480px) {
+ html {
+    font-size: 12px;
+ }
+ body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 250px;
+    width: 100%;
+ }
+header {
+    grid-column: 1;
+    grid-row: 1;
+ }
+
+/*  */
+/* MAIN */
+/*  */
+
+main {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 75px 0 0 0;
+    padding: 0 8px;
+    display: flex;
+ }
+main h1 {
+    font-size: 4.5rem;
+ }
+main h2 {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 2.75rem;
+    padding: 0 25px;
+ }
+main p {
+    font-size: 1.2rem;
+    color: #272b30;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 1.5rem;
+ }
+main .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 50px 0 0 0;
+ }
+main .buttons a:first-child {
+    margin-bottom: 15px;
+ }
+
+/*  */
+/* FOOTER */
+/*  */
+ footer {
+    grid-column: 1;
+    grid-row: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0;
+ }
+ footer img {
+     height: 4.5rem;
+ }
+ footer p {
+     order: 2;
+ }
+
+/*  */
+/*  */
+/*  */
+
+ .navigation {
+    display: none;
+ }
+ .right-sidebar {
+     display: none;
+ }
+ footer {
+    flex-direction: column;
+ }
+
+/*  */
+/* CLASSES GENERALES */
+/*  */
+
+ .button-primary {
+    padding: 12px 25px;
+    font-size: 1.25rem;
+ }
+ .button-secondary {
+    padding: 12px 25px;
+    font-size: 1.25rem;
+ }
+  .button-third {
+    padding: 12px 25px;
+    font-size: 1.25rem;
+ }
+
+
+ /*  */
+ /* ABOUT */
+ /*  */
+
+ .marc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0;
+ }
+ .marc img {
+    margin: 0;
+ }
+ .marc i{
+    padding: 0;
+    margin: 25px 0 0 0;
+    max-width: 250px;
+ }
+ .naissance p {
+    margin-top: 75px;
+ }
+
+ /*  */
+ /* SERVICES  */
+ /*  */
+
+ .main-services {
+    margin-bottom: 100px;
+ }
+ .main-services section {
+    margin: 75px 0 0 0;
+ }
+ .main-services h2 {
+    margin-top: 0;
+ }
+ .main-services h1 {
+    margin-bottom: 100px;
+ }
+ .main-services h3 {
+    padding: 10px 25px 0 25px;
+ }
+ .main-services p {
+    padding: 0 25px;
+ }
+ .main-services ul {
+    padding: 0 25px;
+ }
+ .prendre-contact .center-btn {
+    display: flex;
+    justify-content: center;
+ }
+
+ /*  */
+ /* PORTFOLIO */
+ /*  */
+
+ .portfolio-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(9, 500px);
+    gap: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+ /* images grid */
+ .brut-1 {
+    background-image: url(../media/brut-1.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
+ }
+ .brut-2 {
+    background-image: url(../media/brut-2.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 2;
+ }
+ .brut-3 {
+    background-image: url(../media/brut-3.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 3;
+ }
+ .brut-4 {
+    background-image: url(../media/brut-4.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 4;
+ }
+ .brut-5 {
+    background-image: url(../media/brut-5.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 5;
+ }
+ .brut-6 {
+    background-image: url(../media/brut-6.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 6;
+ }
+ .brut-7 {
+    background-image: url(../media/brut-7.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 7;
+ }
+ .brut-8 {
+    background-image: url(../media/brut-8.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 8;
+ }
+ .brut-9 {
+    background-image: url(../media/brut-9.jpg);
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 9;
+ }
+ .img-grayscale {
+    filter: grayscale(1);
+    transition: .3s ease-in-out;
+ }
+ .img-grayscale: {
+    filter: none;
+    transform: scale(1.1);
+ }
+}
